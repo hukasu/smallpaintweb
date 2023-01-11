@@ -6,4 +6,13 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-yew = "0.20.0"
+wasm-bindgen = "0.2.83"
+wasm-bindgen-rayon = { version = "1.0.3", features = [] }
+web-sys = { version = "0.3", features = ["Window", "Navigator", "HtmlCanvasElement", "CanvasRenderingContext2d", "ImageBitmap", "ImageData"] }
+yew = { version = "0.20.0", features = ["csr"] }
+gloo = "0.8.0"
+gloo-timers = "0.2.5"
+smallpaint = { git = "https://github.com/hukasu/smallpaint" }
+getrandom = { version = "0.2", features = ["js"] }
+glm = { git = "https://github.com/Sarvadi/glm-rs" }
+

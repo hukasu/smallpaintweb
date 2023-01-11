@@ -1,1 +1,9 @@
+# Visual Code
+.vscode/
+
+# Rust
+.cargo/
 /target
+
+# Trunk
+dist/
