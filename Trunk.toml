@@ -1,2 +1,9 @@
 [build]
-pattern_script = "<script type=\"module\">import init, { initThreadPool }  from '{base}{js}'; await init('{base}{wasm}'); await initThreadPool(2); console.debug(\"pool\");</script>"
+pattern_script = """
+<script type=\"module\">
+    import init, { initThreadPool }  from '{base}{js}';
+    await init('{base}{wasm}');
+    await initThreadPool(2);
+    console.debug(\"pool\");
+</script>
+"""
